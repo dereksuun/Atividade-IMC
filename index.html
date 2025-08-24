@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="data">
+        <div class="form">
+          <form>
+            <div class="row">
+              <label>Altura:</label>
+              <input type="text" id="altura" placeholder="Digite sua altura (em metros)" />
+            </div>
+            <div class="row">
+              <label>Peso:</label>
+              <input type="text" id="peso" placeholder="Digite seu peso (em kg)" />
+            </div>
+            <div class="row">
+              <button type="button" id="calcular">Calcular IMC</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="data">
+        <p>Seu IMC é <span id="imc"></span></p>
+
+        <div class="data">
+          <h2>Tabela de faixas do IMC</h2>
+          <table id="tabela-imc" class="tabela-imc" aria-label="Faixas de IMC">
+            <thead>
+              <tr>
+                <th>Classificação</th>
+                <th>Intervalo (kg/m²)</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <small id="hint-imc">A linha correspondente ao seu IMC será destacada.</small>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
